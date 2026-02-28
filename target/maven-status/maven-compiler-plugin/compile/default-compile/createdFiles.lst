@@ -1,0 +1,9 @@
+com\org\mars\avro\Player$Builder.class
+com\org\mars\avro\Environment.class
+com\org\mars\avro\PlayerMoveEvent$Builder.class
+com\org\mars\avro\Position$Builder.class
+com\org\mars\avro\PlayerState.class
+com\org\mars\avro\Position.class
+com\org\mars\avro\Environment$Builder.class
+com\org\mars\avro\Player.class
+com\org\mars\avro\PlayerMoveEvent.class

@@ -1,0 +1,11 @@
+{
+  "type": "enum",
+  "name": "PlayerState",
+  "namespace": "com.org.mars.avro",
+  "symbols": [
+    "REGISTER",
+    "PLAYER_MOVE",
+    "PING",
+    "ACTION"
+  ]
+}

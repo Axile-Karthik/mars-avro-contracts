@@ -1,0 +1,68 @@
+{
+  "type": "record",
+  "name": "PlayerMoveEvent",
+  "namespace": "com.org.mars.avro",
+  "fields": [
+
+    {
+      "name": "messageType",
+      "type": {
+        "type": "enum",
+        "name": "PlayerState",
+        "symbols": ["REGISTER","PLAYER_MOVE","ACTION","PING"]
+      }
+    },
+
+    {
+      "name": "tick",
+      "type": "long"
+    },
+
+    {
+      "name": "worldTime",
+      "type": "long"
+    },
+
+    {
+      "name": "environment",
+      "type": {
+        "type": "record",
+        "name": "Environment",
+        "fields": [
+          { "name": "temperature", "type": "double" },
+          { "name": "windSpeed", "type": "double" },
+          { "name": "dustLevel", "type": "double" }
+        ]
+      }
+    },
+
+    {
+      "name": "players",
+      "type": {
+        "type": "map",
+        "values": {
+          "type": "record",
+          "name": "Player",
+          "fields": [
+            { "name": "playerId", "type": "long" },
+
+            {
+              "name": "position",
+              "type": {
+                "type": "record",
+                "name": "Position",
+                "fields": [
+                  { "name": "x", "type": "double" },
+                  { "name": "y", "type": "double" },
+                  { "name": "z", "type": "double" }
+                ]
+              }
+            }
+
+          ]
+        }
+      }
+    }
+
+  ]
+}
