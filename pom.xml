@@ -48,6 +48,13 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/Axile-Karthik/mars-avro-contracts</url>
+		</repository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 
